@@ -27,6 +27,11 @@ jQuery(function ($) {
         if (brandingData.tertiaryColor) {
           $('.rf_tertiarycolor').css('background', brandingData.tertiaryColor);
         }
+
+        if (brandingData.hidePoweredByRFLogoOnResources ) {
+          $('.pbrf_logo').hide();
+      }
+      
       } else {
         console.error('Failed to fetch branding data:', response);
       }
